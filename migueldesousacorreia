@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miguel Correia - Portfolio</title>
+    
+    <style>
+        /* Base styles for the whole page */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f6;
+            color: #333;
+        }
+
+        /* Container to center content and set a maximum width */
+        .container {
+            width: 80%;
+            max-width: 1000px;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+        }
+
+        /* Header styling: Dark blue background with white text */
+        header {
+            background: #2c3e50;
+            color: #ffffff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: 4px solid #27ae60;
+            text-align: center;
+            padding-bottom: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        header p {
+            margin: 5px 0 0 0;
+            font-size: 1.2em;
+            color: #ecf0f1;
+        }
+
+        /* Section styling: White boxes with soft shadows */
+        section {
+            background: #ffffff;
+            margin: 20px 0;
+            padding: 20px 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        /* Titles inside sections */
+        h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #27ae60;
+            padding-bottom: 5px;
+        }
+
+        /* Lists for Experience, Education, and Projects */
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin-bottom: 15px;
+        }
+
+        /* Highlighting job titles and project names */
+        .highlight {
+            font-weight: bold;
+            color: #27ae60;
+        }
+
+        /* Footer styling */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #2c3e50;
+            color: #ffffff;
+            margin-top: 20px;
+        }
+
+        footer a {
+            color: #27ae60;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Miguel de Sousa Correia</h1>
+        <p>GIS Specialist | Geologist | Python Programmer</p>
+    </header>
+
+    <div class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Geoscientist & Remote Sensing/GIS Specialist with deep experience in Python and advanced geospatial analysis. I'm at my best when turning large, complex data into clear, reliable solutions. If the mission involves tough engineering challenges and high-stakes accuracy, I'm fully onboard.</p>
+        </section>
+
+        <section id="experience">
+            <h2>Work Experience</h2>
+            <ul>
+                <li><span class="highlight">Geospatial Data Scientist</span> | THAWIMPACT (Oct 2025 - Apr 2026)</li>
+                <li><span class="highlight">Freelance Geologist & GIS Specialist</span> | Independent Consultancy (Oct 2023 - Jan 2025)</li>
+                <li><span class="highlight">Internship in Geospatial Information</span> | Spotlite (Jul 2022 - Sep 2022)</li>
+            </ul>
+        </section>
+
+        <section id="projects">
+            <h2>Featured Projects</h2>
+            <ul>
+                <li>
+                    <span class="highlight">Automated Mineral Deposit Analysis</span><br>
+                    Developed a custom Python script (using arcpy) integrated into ArcGIS Pro Notebooks to automate the analysis of mineral deposit data in Africa. Summarises, classifies, and ranks features by country and mineral type.
+                </li>
+                <li>
+                    <span class="highlight">Precision Agriculture & Environmental Consulting</span><br>
+                    Performed vegetative health monitoring in vineyards using NDVI, NDWI, and Water Stress indices. Processed Drone and Sentinel-2 data using Agisoft Metashape and QGIS.
+                </li>
+                <li>
+                    <span class="highlight">Automatic Classification of Antarctic Imagery</span><br>
+                    Processed Worldview-2 and Landsat-8 imagery and implemented advanced Machine Learning algorithms (SVM, RT, KNN) to create vegetation maps in ice-free areas of the Antarctic Peninsula.
+                </li>
+            </ul>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <ul>
+                <li><span class="highlight">Postgraduate Course in Space in Defence and National Security</span> | Air Force Academy (Sep 2025 - Jan 2026)</li>
+                <li><span class="highlight">Master's degree in Geosciences</span> | Universidade de Coimbra (Sep 2023 - Sep 2025)</li>
+                <li><span class="highlight">Master's degree in Geospatial Information Engineering</span> | Universidade de Coimbra (Oct 2022 - Jul 2023)</li>
+                <li><span class="highlight">Bachelor in Geology</span> | Universidade de Coimbra (Sep 2019 - Jul 2022)</li>
+            </ul>
+        </section>
+
+        <section id="skills">
+            <h2>Technical Skills</h2>
+            <p><strong>GIS & Remote Sensing:</strong> ArcGIS Pro, QGIS, Sentinel-2 & Landsat, LiDAR, Land Cover Classification, Change Detection.</p>
+            <p><strong>Programming & Data Analysis:</strong> Python (ArcPy, GeoPandas, Scikit-learn), SQL (PostGIS), Spatial Statistics, Multispectral Data Processing, ETL Workflows, Machine Learning.</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>Location: Coimbra, Portugal | Email: miguelcorreia2803@gmail.com</p>
+        <p>
+            <a href="https://linkedin.com/in/miguelscorreia/" target="_blank">LinkedIn</a> | 
+            <a href="https://github.com/migueldesousanc" target="_blank">GitHub</a>
+        </p>
+    </footer>
+
+</body>
+</html>
