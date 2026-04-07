@@ -88,11 +88,14 @@
     }
     .nav-links a:hover { color: var(--accent); }
  
-    /* --- HERO --- */
+    /* --- HERO (CENTRALIZADO) --- */
     .hero {
       position: relative;
       min-height: 100vh;
-      display: flex; align-items: center;
+      display: flex; 
+      align-items: center;
+      justify-content: center; /* Centraliza horizontalmente o container */
+      text-align: center;      /* Centraliza o texto */
       padding: 0 3rem;
       z-index: 2;
     }
@@ -128,12 +131,15 @@
       font-size: 1rem;
       color: var(--text-dim);
       max-width: 560px;
-      margin-bottom: 2.5rem;
+      margin: 0 auto 2.5rem; /* Margens automáticas nas laterais centralizam o bloco */
       animation: fadeUp 0.7s 0.2s ease both;
     }
  
     .hero-ctas {
-      display: flex; gap: 1rem; flex-wrap: wrap;
+      display: flex; 
+      gap: 1rem; 
+      flex-wrap: wrap;
+      justify-content: center; /* Centraliza os botões */
       animation: fadeUp 0.7s 0.3s ease both;
     }
  
@@ -181,17 +187,23 @@
       padding: 6rem 3rem;
       max-width: 1100px;
       margin: 0 auto;
+      text-align: center; /* Centraliza os títulos H2 das secções */
     }
  
     .section-label {
-      display: flex; align-items: center; gap: 1rem;
+      display: flex; 
+      align-items: center; 
+      gap: 1rem;
       font-size: 0.68rem;
       letter-spacing: 0.2em;
       text-transform: uppercase;
       color: var(--accent);
       margin-bottom: 3rem;
+      justify-content: center; /* Centraliza o conteúdo da label */
     }
  
+    /* Adiciona linha antes e depois do texto da label para centralizar */
+    .section-label::before,
     .section-label::after {
       content: '';
       flex: 1;
@@ -205,6 +217,7 @@
       grid-template-columns: 1fr 1fr;
       gap: 4rem;
       align-items: start;
+      text-align: left; /* Mantém o conteúdo interno alinhado à esquerda para legibilidade */
     }
  
     .about-text h2 {
@@ -252,6 +265,7 @@
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
       gap: 1.5rem;
+      text-align: left;
     }
  
     .skill-group {
@@ -287,7 +301,7 @@
     .tag:hover { border-color: var(--accent2); color: var(--accent2); }
  
     /* --- PROJECTS --- */
-    .projects-list { display: flex; flex-direction: column; gap: 1.5px; }
+    .projects-list { display: flex; flex-direction: column; gap: 1.5px; text-align: left; }
  
     .project-item {
       display: grid;
@@ -335,7 +349,7 @@
     }
  
     /* --- TIMELINE --- */
-    .timeline { position: relative; padding-left: 2rem; }
+    .timeline { position: relative; padding-left: 2rem; text-align: left; }
  
     .timeline::before {
       content: '';
@@ -385,6 +399,7 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 1rem;
+      text-align: left;
     }
  
     .edu-card {
@@ -419,6 +434,7 @@
       grid-template-columns: 1fr 1fr;
       gap: 4rem;
       align-items: center;
+      text-align: left;
     }
  
     .contact-text h2 {
@@ -465,14 +481,12 @@
       to   { opacity: 1; transform: translateY(0); }
     }
  
-    /* ISTO É O QUE ESCONDE O TEXTO INICIALMENTE */
     .reveal {
       opacity: 0;
       transform: translateY(24px);
       transition: opacity 0.8s ease, transform 0.8s ease;
     }
  
-    /* ISTO É O QUE O JAVASCRIPT ATIVA */
     .reveal.visible {
       opacity: 1;
       transform: none;
@@ -730,7 +744,7 @@
       <p>Open to exciting projects in geospatial analysis, remote sensing, environmental consulting, or defence-related data science.</p>
     </div>
     <div class="contact-links reveal">
-      <a href="mailto:miguel.correia@geospatial.pt" class="contact-link">
+      <a href="mailto:miguelcorreia2803@gmail.com" class="contact-link">
         <span class="contact-link-icon">✉</span>
         <span>miguel.correia@geospatial.pt</span>
       </a>
