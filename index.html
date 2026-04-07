@@ -465,11 +465,14 @@
       to   { opacity: 1; transform: translateY(0); }
     }
  
+    /* ISTO É O QUE ESCONDE O TEXTO INICIALMENTE */
     .reveal {
       opacity: 0;
       transform: translateY(24px);
-      transition: opacity 0.6s ease, transform 0.6s ease;
+      transition: opacity 0.8s ease, transform 0.8s ease;
     }
+ 
+    /* ISTO É O QUE O JAVASCRIPT ATIVA */
     .reveal.visible {
       opacity: 1;
       transform: none;
@@ -485,7 +488,6 @@
       .project-item { grid-template-columns: 1fr; }
       footer { flex-direction: column; gap: 0.5rem; text-align: center; }
     }
-  
   </style>
 </head>
 <body>
@@ -519,7 +521,6 @@
   </div>
   <div class="hero-coords">40°12′N · 8°25′W · Coimbra, PT</div>
 </div>
- 
  
 <section id="about">
   <div class="section-label">01 — About</div>
@@ -606,4 +607,176 @@
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
         Soft Skills & Domains
       </div>
-      <div class="skill-
+      <div class="skill-tags">
+        <span class="tag">Technical Reporting</span>
+        <span class="tag">Environmental Consulting</span>
+        <span class="tag">Precision Agriculture</span>
+        <span class="tag">Defence & Security</span>
+        <span class="tag">Research</span>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<section id="projects">
+  <div class="section-label">03 — Projects</div>
+  <div class="projects-list">
+ 
+    <div class="project-item reveal">
+      <div>
+        <div class="project-num">001</div>
+        <div class="project-name">Automatic Classification of Antarctic Imagery</div>
+      </div>
+      <div class="project-desc">
+        Master's dissertation. Processed Worldview-2 and Landsat-8 imagery to create vegetation maps across ice-free areas of the Antarctic Peninsula. Implemented and benchmarked SVM, Random Trees, and kNN algorithms for classification accuracy optimisation.
+      </div>
+      <div class="project-stack">
+        <span class="stack-tag">Python</span>
+        <span class="stack-tag">SVM</span>
+        <span class="stack-tag">Landsat-8</span>
+        <span class="stack-tag">Worldview-2</span>
+        <span class="stack-tag">ML</span>
+      </div>
+    </div>
+ 
+    <div class="project-item reveal">
+      <div>
+        <div class="project-num">002</div>
+        <div class="project-name">Automated Mineral Deposit Analysis</div>
+      </div>
+      <div class="project-desc">
+        Built a custom ArcPy script integrated into ArcGIS Pro Notebooks to automate analysis of mineral deposit data across Africa. The pipeline summarises, classifies and ranks features by country and mineral type — identifying regions with the highest exploitation concentration.
+      </div>
+      <div class="project-stack">
+        <span class="stack-tag">ArcPy</span>
+        <span class="stack-tag">ArcGIS Pro</span>
+        <span class="stack-tag">Python</span>
+        <span class="stack-tag">Automation</span>
+      </div>
+    </div>
+ 
+    <div class="project-item reveal">
+      <div>
+        <div class="project-num">003</div>
+        <div class="project-name">Precision Agriculture & Vineyard Monitoring</div>
+      </div>
+      <div class="project-desc">
+        Performed vegetative health monitoring for vineyards using NDVI, NDWI, and Water Stress indices derived from Drone and Sentinel-2 data. Processed imagery with Agisoft Metashape and QGIS. Also conducted a geological and environmental impact study for the Pampilhosa Lime Kilns.
+      </div>
+      <div class="project-stack">
+        <span class="stack-tag">NDVI/NDWI</span>
+        <span class="stack-tag">Sentinel-2</span>
+        <span class="stack-tag">Drone</span>
+        <span class="stack-tag">QGIS</span>
+        <span class="stack-tag">Metashape</span>
+      </div>
+    </div>
+ 
+  </div>
+</section>
+ 
+<section id="experience">
+  <div class="section-label">04 — Experience</div>
+  <div class="timeline">
+    <div class="timeline-item reveal">
+      <div class="timeline-date">OCT 2025 — APR 2026</div>
+      <div class="timeline-role">Geospatial Data Scientist</div>
+      <div class="timeline-org">THAWIMPACT</div>
+    </div>
+    <div class="timeline-item reveal">
+      <div class="timeline-date">OCT 2023 — JAN 2025</div>
+      <div class="timeline-role">Freelance Geologist & GIS Specialist</div>
+      <div class="timeline-org">Independent Consultancy</div>
+    </div>
+    <div class="timeline-item reveal">
+      <div class="timeline-date">JUL 2022 — SEP 2022</div>
+      <div class="timeline-role">Geospatial Information Intern</div>
+      <div class="timeline-org">Spotlite</div>
+    </div>
+  </div>
+</section>
+ 
+<section id="education">
+  <div class="section-label">05 — Education</div>
+  <div class="edu-grid">
+    <div class="edu-card reveal">
+      <div class="edu-period">Sep 2025 — Jan 2026</div>
+      <div class="edu-degree">Postgraduate — Space in Defence & National Security</div>
+      <div class="edu-school">Air Force Academy</div>
+    </div>
+    <div class="edu-card reveal">
+      <div class="edu-period">Sep 2023 — Sep 2025</div>
+      <div class="edu-degree">Master's in Geosciences</div>
+      <div class="edu-school">Universidade de Coimbra</div>
+    </div>
+    <div class="edu-card reveal">
+      <div class="edu-period">Oct 2022 — Jul 2023</div>
+      <div class="edu-degree">Master's in Geospatial Information Engineering</div>
+      <div class="edu-school">Universidade de Coimbra</div>
+    </div>
+    <div class="edu-card reveal">
+      <div class="edu-period">Sep 2019 — Jul 2022</div>
+      <div class="edu-degree">Bachelor's in Geology</div>
+      <div class="edu-school">Universidade de Coimbra</div>
+    </div>
+  </div>
+</section>
+ 
+<section id="contact">
+  <div class="section-label">06 — Contact</div>
+  <div class="contact-wrap">
+    <div class="contact-text reveal">
+      <h2>Let's work<br/><span>together.</span></h2>
+      <p>Open to exciting projects in geospatial analysis, remote sensing, environmental consulting, or defence-related data science.</p>
+    </div>
+    <div class="contact-links reveal">
+      <a href="mailto:miguel.correia@geospatial.pt" class="contact-link">
+        <span class="contact-link-icon">✉</span>
+        <span>miguel.correia@geospatial.pt</span>
+      </a>
+      <a href="https://linkedin.com/in/miguelscorreia/" target="_blank" class="contact-link">
+        <span class="contact-link-icon">in</span>
+        <span>linkedin.com/in/miguelscorreia/</span>
+      </a>
+      <a href="https://github.com/migueldesousanc" target="_blank" class="contact-link">
+        <span class="contact-link-icon">⌥</span>
+        <span>github.com/migueldesousanc</span>
+      </a>
+    </div>
+  </div>
+</section>
+ 
+<footer>
+  <span>© 2026 Miguel de Sousa Correia</span>
+  <span>Built with precision · Coimbra, PT</span>
+</footer>
+ 
+<script>
+  // 1. Efeito de brilho do cursor
+  const glow = document.getElementById('glow');
+  document.addEventListener('mousemove', e => {
+    glow.style.left = e.clientX + 'px';
+    glow.style.top = e.clientY + 'px';
+  });
+ 
+  // 2. Logica de revelação ao rolar (Scroll Reveal)
+  const observerOptions = {
+    threshold: 0.15
+  };
+ 
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target); // Para de observar após aparecer
+      }
+    });
+  }, observerOptions);
+ 
+  // Seleciona todos os elementos com a classe reveal e ativa o vigia
+  document.querySelectorAll('.reveal').forEach(el => {
+    observer.observe(el);
+  });
+</script>
+</body>
+</html>
